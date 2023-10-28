@@ -5,7 +5,6 @@ const refs = {
   outputDiv: document.querySelector('#boxes'),
 };
 
-// initial
 if (!refs.inputBox.value) {
   refs.createBtn.disabled = true;
 }
@@ -18,7 +17,6 @@ refs.inputBox.addEventListener('input', onInput);
 refs.createBtn.addEventListener('click', onCreate);
 refs.destroyBtn.addEventListener('click', onDestroy);
 
-//if user put some manualy
 function onInput(event) {
   !!(
     Number(event.currentTarget.value) > 0 &&
